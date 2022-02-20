@@ -2,6 +2,7 @@ body {
   background-color: #495A6B;
 }
 
+/* City background properties */
 .city {
   width: 512px;
   height: 512px;
@@ -19,13 +20,14 @@ body {
 h1 {
   font-family: 'VT323';
 }
-  
+
+/* Light base */
 .light {
     border-radius: 50%;
 		position: "relative"; 
 		width: 8px;
 		height: 8px;
-		margin-top: 2;
+		margin-top: 2px;
 		vertical-align: "middle";
 		border-Radius: "100%";
 		display: "block";
@@ -36,11 +38,13 @@ h1 {
     display: block;
   }
   
+  /* Javascript Avenue lights */
+
   .JSTtrafNorth {
     position:relative;
     display: block;
-    left:-36px;
-    top: 168px;
+    left: 248px;
+    top: 169px;
     -webkit-transform:rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -51,60 +55,55 @@ h1 {
 .JSTtrafSouth {
     position:relative;
     display: block;
-    left:36px;
-    top: 206px;
+    left:252px;
+    top: 245px;
 }
 
 .JSPedNorthNE {
     position:relative;
     display: block;
-    left:36px;
-    top: 104px;    
+    left:320px;
+    top: 105px;    
     -webkit-transform:rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-    
+    transform: rotate(180deg); 
 }
 
 .JSPedNorthNW {
     position:relative;
     display: block;
-    right:36px;
-    top: 84px;    
-
-    
+    left:180px;
+    top: 85px;    
 }
 
 .JSPedSouthSE {
     position:relative;
     display: block;
-    left:36px;
-    top: 288px;    
+    left:320px;
+    top: 240px;    
     -webkit-transform:rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
-    
 }
 
 .JSPedSouthSW {
     position:relative;
     display: block;
-    right:36px;
-    top: 270px;
+    left:180px;
+    top: 260px;
 }
 
-
-
+/* React Road Lights */
 
 .RETrafEast {
     position:relative;
     display: block;
-    left:74px;
-    top:66px;
+    left:323px;
+    top:100px;
     -webkit-transform:rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -115,8 +114,8 @@ h1 {
 .RETrafWest {
     position: relative;
     display: block;
-    right:74px;
-    top:68px;
+    left:178px;
+    top:34px;
     -webkit-transform:rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -127,8 +126,8 @@ h1 {
 .REPedEastNE {
     position:relative;
     display: block;
-    left:112px;
-    top: 42px;    
+    left:362px;
+    top: 8px;    
     -webkit-transform:rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -140,8 +139,8 @@ h1 {
 .REPedEastSE {
     position:relative;
     display: block;
-    left:112px;
-    top: 92px;    
+    left:361px;
+    top: 127px;    
     -webkit-transform:rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -153,8 +152,8 @@ h1 {
 .REPedWestNW {
     position:relative;
     display: block;
-    right:112px;
-    bottom: 48px;    
+    left:138px;
+    bottom: 83px;    
     -webkit-transform:rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -166,8 +165,8 @@ h1 {
 .REPedWestSE {
     position:relative;
     display: block;
-    right:112px;
-    top: 44px;    
+    left:138px;
+    top: 77px;    
     -webkit-transform:rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);

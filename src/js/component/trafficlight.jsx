@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import Light from "./light.jsx";
 import propTypes from "prop-types";
 
-// import { useTrafficLight } from "react-hooks-helper";
+// This array determines the duration of each traffic turn
 
 const lightDurations = [10000, 7000, 3000];
+
+// Using props, this function changes the color of the trafficlight each time the interval ends
 
 const TrafficLight = (props) => {
 	const [colorIndex, setColorIndex] = useState(props.initialValue);

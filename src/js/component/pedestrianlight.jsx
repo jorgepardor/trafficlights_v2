@@ -2,7 +2,11 @@ import React, { useState, useEffect } from "react";
 import Light from "./light.jsx";
 import propTypes from "prop-types";
 
+// This array determines the duration of each pedestrian turn
+
 const lightDurations = [10000, 10000];
+
+// Using props, this function changes the color of the pedestrian light each time the interval ends
 
 const PedestrianLight = (props) => {
 	const [colorIndex, setColorIndex] = useState(props.initialValue);

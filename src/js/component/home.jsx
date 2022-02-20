@@ -4,37 +4,80 @@ import PedestrianLight from "./pedestrianlight.jsx";
 
 import Citybg from "../../img/citybg.png";
 
-//create your first component
 const Home = () => {
 	return (
 		<div className="main">
 			<div className="title"></div>
+
+			{/* Background component */}
+
 			<div className="city" style={{ backgroundImage: `url(${Citybg})` }}>
+				{/* Javascript North Avenue Lights */}
+
 				<div>
 					<TrafficLight
 						initialValue={0}
 						className={`JST, JSTtrafNorth`}
 					/>
-					<PedestrianLight initialValue={1} />
-					<PedestrianLight initialValue={1} />
+					<PedestrianLight
+						initialValue={1}
+						className={`JSP, JSPedNorthNE`}
+					/>
+					<PedestrianLight
+						initialValue={1}
+						className={`JSP, JSPedNorthNW`}
+					/>
 				</div>
 
-				<div>
-					<TrafficLight initialValue={0} />
-					<PedestrianLight initialValue={1} />
-					<PedestrianLight initialValue={1} />
-				</div>
+				{/* Javascript South Avenue Lights */}
 
 				<div>
-					<TrafficLight initialValue={1} />
-					<PedestrianLight initialValue={0} />
-					<PedestrianLight initialValue={0} />
+					<TrafficLight
+						initialValue={0}
+						className={`JST, JSTtrafSouth`}
+					/>
+					<PedestrianLight
+						initialValue={1}
+						className={`JSP, JSPedSouthSW`}
+					/>
+					<PedestrianLight
+						initialValue={1}
+						className={`JSP, JSPedSouthSE`}
+					/>
 				</div>
 
+				{/* React Road East Lights */}
+
 				<div>
-					<TrafficLight initialValue={1} />
-					<PedestrianLight initialValue={0} />
-					<PedestrianLight initialValue={0} />
+					<TrafficLight
+						initialValue={1}
+						className={`RET, RETrafEast`}
+					/>
+					<PedestrianLight
+						initialValue={0}
+						className={`REP, REPedEastNE`}
+					/>
+					<PedestrianLight
+						initialValue={0}
+						className={`REP, REPedEastSE`}
+					/>
+				</div>
+
+				{/* React Road West Lights */}
+
+				<div>
+					<TrafficLight
+						initialValue={1}
+						className={`RET, RETrafWest`}
+					/>
+					<PedestrianLight
+						initialValue={0}
+						className={`REP, REPedWestSE`}
+					/>
+					<PedestrianLight
+						initialValue={0}
+						className={`REP, REPedWestNW`}
+					/>
 				</div>
 			</div>
 
